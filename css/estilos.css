@@ -1,0 +1,121 @@
+
+/* Propiedades Globales */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body 
+{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilos Menú (Tamaño de letra, estilo, etc)*/
+#menu a, button
+{
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+/* Estilos de imágenes */
+.carousel-inner 
+{
+    max-height:40rem !important;
+}
+
+/* Estilos del mapa */
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.mapa {
+    background: url(../img/mapa.png);
+    width:100%;
+    height:500px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+#bg-contactos
+{
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto
+{
+    background-color: #1b2a4e;
+    min-height: 500px;
+    position: relative;
+}
+
+
+/* Media Queries Pantalla Ancha */
+@media(max-width:1200px)
+{
+    #local
+    {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper
+    {
+        width: 90%;
+        margin:auto;
+        padding-top: 50px;
+    }
+}
+
+/* Estilos footer */
+footer
+{
+    background: #1a2b4e;
+    min-height: 100px;
+}
+
+footer p
+{
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i
+{
+    font-size: 50px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+/* Media Queries de Pantalla */
+@media(max-width:768px)
+{
+    #contenido, #equipo
+    {
+        width: 90% !important;
+    }
+
+    #equipo p 
+    {
+        display: none;
+    }
+
+    .servicio-fila
+    {
+        width: 100% !important;
+        text-align: center;
+    }
+    #bg-contactos
+    {
+        top: -110px;
+    }
+
+
+}
